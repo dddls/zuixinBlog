@@ -1,8 +1,75 @@
 body {
+  background: linear-gradient(to right bottom, #14bcc5 ,#1057db, #0d50cc,#12b1b9);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 2.3em 0 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+}
+.main-agile {
+  width: 28%;
+  margin: 0px auto 0px auto;
+  background: rgba(0, 0, 0, 0.22);
+  padding: 12px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.12);
+}
 
+.content-wthree {
+  padding: 50px 50px;
+  text-align: center;
+position: relative;
+}
+h2 {
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1.3em;
+  text-transform: uppercase;
+}
+.content-wthree input[type="text"], .content-wthree input[type="password"] {
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+  padding: 12px 12px 12px 40px;
+  width: 85.2%;
+  border: none;
+  -webkit-appearance: none;
+  margin-bottom: 12px;
+  border: 1px solid #fff;
+}
+.content-wthree input[type="button"] {
+  font-weight: bold;
+  width: 49%;
+  background: #19b9cc;
+  border: none;
+  margin: 1.5em 0 1.5em;
+  outline: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 14px 0;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .5s ease-in;
+  -webkit-transition: .5s ease-in;
+  -moz-transition: .5s ease-in;
+  -o-transition: .5s ease-in;
+  -ms-transition: .5s ease-in;
+  cursor: pointer;
+}
 a {
   color: #00B7FF;
 }
