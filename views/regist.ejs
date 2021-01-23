@@ -10,14 +10,17 @@
     <h1>注册</h1>
 	<div class="main-agile">
 		<div class="content-wthree">
-			<form action="#" method="post">
+			<form action="/users/addUser" method="post">
 				<div class="inputs-w3ls">
-					<input type="text" name="Username" placeholder="请输入账号" required="" />
+					<input type="text" name="userName" placeholder="请输入账号" required="" />
 				</div>
 				<div class="inputs-w3ls">
-					<input type="password" name="Password" placeholder="请输入密码" required="" />
+					<input type="password" name="password" placeholder="请输入密码" required="" />
 				</div>
-				<button>注册</button>
+				<div class="inputs-w3ls">
+					<input type="password" name="passwordC" placeholder="请再次输入密码" required="" />
+				</div>
+				<button type="submit">注册</button>
 				<button>重置</button>
 			</form>
 		</div>
