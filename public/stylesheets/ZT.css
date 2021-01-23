@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(to right bottom, #14bcc5 ,#1057db, #0d50cc,#12b1b9);
+    background-attachment: fixed;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: white;
+  }
+.layui-container{
+    width: 100%;
+}
+.dh{
+    width: 100%;
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+form{
+    width: 75%;
+    opacity: 0.92;
+}
+table{
+    opacity: 0.92;
+}

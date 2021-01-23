@@ -1,15 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='layui/css/layui.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<html lang="en">
 
-    <button type="button" class="layui-btn">标准按钮</button>
-    <a href="http://www.layui.com" class="layui-btn">可跳转按钮</a>
-  </body>
+<head>
+  <%- include('ZTcss',{}); %>
+    <title>主页</title>
+</head>
+
+<body>
+  <div class="layui-container">
+    <div class="layui-row">
+      <div class="dh">
+        <ul class="layui-nav" lay-filter="">
+          <li class="layui-nav-item layui-this"><a href="http://localhost:3000">主页</a></li>
+          <li class="layui-nav-item"><a href="http://localhost:3000/article">详情</a></li>
+          <li class="layui-nav-item"><a href="http://localhost:3000/write">新增</a></li>
+          <li class="layui-nav-item"><a href="http://localhost:3000/login">个人中心</a></li>
+        </ul>
+      </div>
+      <table class="layui-table" lay-skin="line" lay-size="lg">
+        <colgroup>
+          <col width="150">
+          <col width="200">
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>昵称</th>
+            <th>加入时间</th>
+            <th>签名</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>贤心</td>
+            <td>2016-11-29</td>
+            <td>人生就像是一场修行</td>
+          </tr>
+          <tr>
+            <td>许闲心</td>
+            <td>2016-11-28</td>
+            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+          </tr>
+          <tr>
+            <td>贤心</td>
+            <td>2016-11-29</td>
+            <td>人生就像是一场修行</td>
+          </tr>
+          <tr>
+            <td>许闲心</td>
+            <td>2016-11-28</td>
+            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+          </tr>
+          <tr>
+            <td>贤心</td>
+            <td>2016-11-29</td>
+            <td>人生就像是一场修行</td>
+          </tr>
+          <tr>
+            <td>许闲心</td>
+            <td>2016-11-28</td>
+            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
 </html>

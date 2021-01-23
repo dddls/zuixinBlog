@@ -9,7 +9,14 @@ router.get('/', function(req, res, next) {
 router.get('/login',function(req,res){
   res.render('login',{})
 })
-
+//注册路由设置
+router.get('/regist',function(req,res){
+  res.render('regist',{})
+})
+//写文章路由设置
+router.get('/write',function(req,res){
+  res.render('write',{})
+})
 //详情页路由设置
 router.get('/article',function(req,res){
   res.render('details',{})

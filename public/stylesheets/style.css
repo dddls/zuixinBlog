@@ -30,15 +30,6 @@ h1 {
   text-align: center;
 position: relative;
 }
-h2 {
-  color: #fff;
-  font-size: 28px;
-  letter-spacing: 2px;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 1.3em;
-  text-transform: uppercase;
-}
 .content-wthree input[type="text"], .content-wthree input[type="password"] {
   outline: none;
   font-size: 14px;
@@ -51,7 +42,7 @@ h2 {
   margin-bottom: 12px;
   border: 1px solid #fff;
 }
-.content-wthree input[type="button"] {
+.content-wthree button {
   font-weight: bold;
   width: 49%;
   background: #19b9cc;

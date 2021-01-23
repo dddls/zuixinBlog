@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('head',{}); %>
-    <title>Document</title>
+    <%- include('ZTcss',{}); %>
+        <title>详情</title>
 </head>
+
 <body>
-    这里是详情页
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="dh">
+                <ul class="layui-nav" lay-filter="">
+                    <li class="layui-nav-item"><a href="http://localhost:3000">主页</a></li>
+                    <li class="layui-nav-item layui-this"><a href="http://localhost:3000/article">详情</a></li>
+                    <li class="layui-nav-item"><a href="http://localhost:3000/write">新增</a></li>
+                    <li class="layui-nav-item"><a href="http://localhost:3000/login">个人中心</a></li>
+                </ul>
+            </div>
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    <td>贤心</td>
+                    <td>2016-11-29</td>
+                </div>
+                <div class="layui-card-body">
+                    <td>人生就像是一场修行</td>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
