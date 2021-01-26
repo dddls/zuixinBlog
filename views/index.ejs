@@ -9,14 +9,7 @@
 <body>
   <div class="layui-container">
     <div class="layui-row">
-      <div class="dh">
-        <ul class="layui-nav" lay-filter="">
-          <li class="layui-nav-item layui-this"><a href="http://localhost:3000">主页</a></li>
-          <li class="layui-nav-item"><a href="http://localhost:3000/article">详情</a></li>
-          <li class="layui-nav-item"><a href="http://localhost:3000/write">新增</a></li>
-          <li class="layui-nav-item"><a href="http://localhost:3000/login">个人中心</a></li>
-        </ul>
-      </div>
+      <%- include('headbody',{userName}); %>
       <table class="layui-table" lay-skin="line" lay-size="lg">
         <colgroup>
           <col width="150">
