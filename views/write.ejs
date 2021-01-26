@@ -10,29 +10,41 @@
     <div class="layui-container">
         <div class="layui-row">
             <%- include('headbody',{userName}); %>
-            <form class="layui-form" action="/article/add" method="post">
-                <div class="layui-form-item">
-                    <label class="layui-form-label">标题</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
-                            autocomplete="off" class="layui-input">
+                <form class="layui-form" action="/article/add" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">标题</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                                autocomplete="off" class="layui-input">
+                        </div>
                     </div>
-                </div>
-                <div class="layui-form-item layui-form-text">
-                    <label class="layui-form-label">内容</label>
-                    <div class="layui-input-block">
-                        <textarea name="content" placeholder="请输入内容" class="layui-textarea"></textarea>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">内容</label>
+                        <div class="layui-input-block" style="color: black !important;">
+                            <textarea id="editor" name="content" placeholder="请输入内容" class="layui-textarea"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="layui-form-item">
-                    <div class="layui-input-block">
-                        <button class="layui-btn" type="submit">立即提交</button>
-                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" type="submit">立即提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
         </div>
     </div>
+    <script src="/libs/ckeditor5-build-classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                ckfinder: {
+                    uploadUrl: '/article/upload'
+                }
+            })
+                .catch(error => {
+                    console.error(error);
+                });
+    </script>
 </body>
 
 </html>
