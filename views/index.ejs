@@ -10,52 +10,47 @@
   <div class="layui-container">
     <div class="layui-row">
       <%- include('headbody',{userName}); %>
-      <table class="layui-table" lay-skin="line" lay-size="lg">
-        <colgroup>
-          <col width="150">
-          <col width="200">
-          <col>
-        </colgroup>
-        <thead>
-          <tr>
-            <th>昵称</th>
-            <th>加入时间</th>
-            <th>签名</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>贤心</td>
-            <td>2016-11-29</td>
-            <td>人生就像是一场修行</td>
-          </tr>
-          <tr>
-            <td>许闲心</td>
-            <td>2016-11-28</td>
-            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-          </tr>
-          <tr>
-            <td>贤心</td>
-            <td>2016-11-29</td>
-            <td>人生就像是一场修行</td>
-          </tr>
-          <tr>
-            <td>许闲心</td>
-            <td>2016-11-28</td>
-            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-          </tr>
-          <tr>
-            <td>贤心</td>
-            <td>2016-11-29</td>
-            <td>人生就像是一场修行</td>
-          </tr>
-          <tr>
-            <td>许闲心</td>
-            <td>2016-11-28</td>
-            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="layui-table" lay-skin="line" lay-size="lg">
+          <colgroup>
+            <col width="150">
+            <col width="200">
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>标题</th>
+              <th>创造时间</th>
+              <th>内容</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% data.blogList.map(item=>{ %>
+              <tr>
+                <td>
+                  <%= item.title %>
+                </td>
+                <td>
+                  <%= item.time %>
+                </td>
+                <td>
+                  <%- item.content %>
+                </td>
+                <td>
+                  <a href="#">编辑</a>
+                  <a href="#">删除</a>
+                </td>
+                <% }) %>
+              </tr>
+          </tbody>
+        </table>
+        <div style="text-align: center;">
+          <% for(let i=1;i<=data.pageTotle;i++){%>
+            <a href="/?page=<%=i%>" class="<%- data.currPage==i?'active':''%>" style="color: white;">
+              <%- i%>
+            </a>
+            <%}%>
+        </div>
     </div>
   </div>
 </body>

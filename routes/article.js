@@ -16,6 +16,7 @@ router.post('/add', (req, res, next) => {
    //向数据库添加用户信息
    let articleInfo = {
       title: req.body.title,
+      date:Date.now(),
       content: req.body.content,
    }
    //页面表单数据，放入模型
